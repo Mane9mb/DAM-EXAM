@@ -21,6 +21,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
+
 import java.io.File;
 
 import cat.udl.tidic.amd.dam_tips.R;
@@ -101,6 +103,8 @@ public class PerfilUser extends AppCompatActivity {
                     mail.setText(u.getEmail());
                     phone.setText(u.getPhone());
                     pointss.setText(u.getPoints());
+                    Picasso.get().load(u.getPhoto()).into(img_perfs);
+
                     if(u.getGenere().equals("M")){
                         Log.d("TAG","ENTRA");
                         generes.setText("Hombre");

@@ -45,7 +45,7 @@ class UserAdapter extends ListAdapter<Account, UserAdapter.UserHolder> {
 
         Log.d(TAG, "Photo URl:" + current_player.getPhoto());
 
-        Picasso.get().load(current_player.getPhoto()).into(holder.photo);
+        //Picasso.get().load(current_player.getPhoto()).into(holder.photo);
     }
 
     public Account getUserAt(int position){
