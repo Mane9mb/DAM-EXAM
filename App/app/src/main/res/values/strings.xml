@@ -1,5 +1,5 @@
 <resources>
-        <string name="app_name">DAM-EXAM</string>
+    <string name="app_name">DAM-EXAM</string>
 
 
     <string name="error_invalid_email">This email address is invalid</string>
@@ -16,6 +16,9 @@
     <string name="genderPicker">Select gender:</string>
     <string name="categoryPicker">Select category:</string>
     <string name="provincePicker">Select province:</string>
+    <string name="Punts">Punts</string>
+    <string name="Genero">Genero</string>
+    <string name="Perfil">Perfil</string>
 
     <string name="male">Male</string>
     <string name="female">Female</string>

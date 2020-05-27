@@ -3,7 +3,8 @@ package cat.udl.tidic.amd.dam_tips.models;
 import com.google.gson.annotations.SerializedName;
 
 public class Account {
-
+    @SerializedName("id")
+    private String id;
     @SerializedName("username")
     private String username;
     @SerializedName("email")
@@ -20,11 +21,52 @@ public class Account {
     private String photo;
     @SerializedName("password")
     private String password;
+    @SerializedName("points")
+    private String points;
+
+
 
 
     public Account() {
     }
 
+    public String getPoints() {
+        return points;
+    }
+
+    public void setPoints(String points) {
+        this.points = points;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    @Override
+    public boolean equals(Object o) {
+
+        // If the object is compared with itself then return true
+        if (o == this) {
+            return true;
+        }
+
+        /* Check if o is an instance of Complex or not
+          "null instanceof [type]" also returns false */
+        if (!(o instanceof Account)) {
+            return false;
+        }
+
+        // typecast o to Complex so that we can compare data members
+        Account e = (Account) o;
+
+        // Compare the data members and return accordingly
+        return this.id == e.getId()
+                && this.name.equals(e.getName());
+
+    }
 
     public String getUsername() {
         return username;

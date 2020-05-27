@@ -140,6 +140,7 @@ class User(SQLAlchemyBase, JSONModel):
     def public_profile(self):
         return {
             "created_at": self.created_at.strftime(settings.DATETIME_DEFAULT_FORMAT),
+            "id": self.id,
             "username": self.username,
             "genere": self.genere.value,
             "photo": self.photo,

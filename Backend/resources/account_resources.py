@@ -48,7 +48,7 @@ class ResourceCreateUserToken(DAMCoreResource):
                         e["Tasca " + str(a)] = aux[a]
 
                 e["Info"] = "Molta sort!"
-
+                print(e)
                 resp.media = {"token": current_token.token,
                               "exam": e}
                 resp.status = falcon.HTTP_200

@@ -7,7 +7,7 @@ import falcon
 from falcon.media.validators import jsonschema
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import NoResultFound
-
+from sqlalchemy import desc
 import messages
 from db.models import User, GenereEnum
 from hooks import requires_auth

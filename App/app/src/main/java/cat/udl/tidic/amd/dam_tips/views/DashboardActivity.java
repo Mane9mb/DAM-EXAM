@@ -17,12 +17,26 @@ public class DashboardActivity extends CustomActivty {
 
     private Button disconnect;
     private LoginViewModel loginViewModel;
+    private Button Ranking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         initView();
+    }
+
+    public void Ranking(View view){
+        Intent intent = new Intent(DashboardActivity.this,Ranking.class);
+        startActivity(intent);
+
+
+    }
+
+    public void PerfilUsu(View view){
+
+        Intent intent = new Intent(DashboardActivity.this,PerfilUser.class);
+        startActivity(intent);
     }
 
 
